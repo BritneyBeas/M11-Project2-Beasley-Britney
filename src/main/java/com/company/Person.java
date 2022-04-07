@@ -3,39 +3,26 @@ package com.company;
 public class Person {
 
     private String name;
-    private int salary;
-    private int earned;
-
+    private double salary;
+    protected double earned;
 
     public String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getSalary() {
+    public double getSalary() {
         return salary;
     }
-
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
-    public int getEarned() {
+    public double getEarned() {
         return earned;
     }
 
-    public void setEarned(int earned) {
-        this.earned = earned;
-    }
-
-    public Person(String name, int salary){
+    public Person(String name, double salary){
         this.name = name;
         this.salary = salary;
         this.earned = 0;
-
+    }
+    public void updateMoneyEarned() {
+        this.earned += getSalary();
     }
 
 

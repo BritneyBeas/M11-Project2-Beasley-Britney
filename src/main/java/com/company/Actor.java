@@ -2,7 +2,6 @@ package com.company;
 
 public class Actor extends Person {
     private String role;
-    private int salary;
 
     public Actor(String name, int salary, String role) {
         super(name, salary);
@@ -12,9 +11,7 @@ public class Actor extends Person {
         return role;
     }
 
-    public int getSalary() {
-        return salary;
-    }
+
 
 
 
